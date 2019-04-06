@@ -2,37 +2,160 @@
 
 ### Table of Contents
 
--   [sayHello][1]
+-   [isHandlerFunction][1]
     -   [Parameters][2]
-    -   [Examples][3]
+-   [handleReturnStmt][3]
+    -   [Parameters][4]
+-   [handleNextCallExpression][5]
+    -   [Parameters][6]
+-   [handleGenericFnCallExpression][7]
+    -   [Parameters][8]
+-   [handleFnCallExpression][9]
+    -   [Parameters][10]
+-   [handleIfStatement][11]
+    -   [Parameters][12]
+-   [handleBlockStatements][13]
+    -   [Parameters][14]
+-   [handleFunctionDeclaration][15]
+    -   [Parameters][16]
 
-## sayHello
+## 
 
-Say hello
+Flag if the handler does not call `next()` in a Restify handler
+
+**Meta**
+
+-   **author**: Rajat Kumar
+
+## isHandlerFunction
+
+This function checks if the current AST node is a valid sinatra style
+handler function
 
 ### Parameters
 
--   `name` **[String][4]** name of the person (optional, default `Jane`)
+-   `node` **[Object][17]** is the AST node
 
-### Examples
+Returns **[boolean][18]** 
 
-With default name
+## handleReturnStmt
 
+This function checks if the current node is a return statement
+and looks for any call for next() inside it. Returns true if we find a
+valid call expression
 
-```javascript
-sayHello();
-```
+### Parameters
 
-```javascript
-sayHello('John');
-```
+-   `node` **[Object][17]** 
 
-Returns **[String][4]** 
+Returns **[boolean][18]** 
 
-[1]: #sayhello
+## handleNextCallExpression
+
+This function checks if the current node is `next()` statement
+Returns true if we find a
+valid `next()` expression
+
+### Parameters
+
+-   `node` **[Object][17]** 
+
+Returns **[boolean][18]** 
+
+## handleGenericFnCallExpression
+
+This function checks if the current node is a generalized function
+statement which is an execution call and looks for any call for next() inside it.
+Returns true if we find a valid call expression
+
+### Parameters
+
+-   `node` **[Object][17]** 
+-   `name`  
+
+Returns **[boolean][18]** 
+
+## handleFnCallExpression
+
+This function checks if the current node is an expression statement
+and has an execution call expression and looks for any call for next()
+inside it.
+Returns true if we find a valid call expression
+
+### Parameters
+
+-   `node` **[Object][17]** 
+
+Returns **[boolean][18]** 
+
+## handleIfStatement
+
+This function checks if the current node is an IF Statement
+and looks for any call for next() inside it.
+Returns true if we find a valid call expression
+
+### Parameters
+
+-   `node` **[Object][17]** 
+
+Returns **[boolean][18]** 
+
+## handleBlockStatements
+
+This function handles a block of statements
+looks for any call for next() inside it.
+Returns true if we find a valid call expression
+
+### Parameters
+
+-   `node` **[Object][17]** 
+
+Returns **[boolean][18]** 
+
+## handleFunctionDeclaration
+
+This function checks if the current node is a function declaration
+looks for any call for next() inside it.
+Reports if we found any `next()` call or not
+
+### Parameters
+
+-   `node` **[Object][17]** 
+
+Returns **void** 
+
+[1]: #ishandlerfunction
 
 [2]: #parameters
 
-[3]: #examples
+[3]: #handlereturnstmt
 
-[4]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[4]: #parameters-1
+
+[5]: #handlenextcallexpression
+
+[6]: #parameters-2
+
+[7]: #handlegenericfncallexpression
+
+[8]: #parameters-3
+
+[9]: #handlefncallexpression
+
+[10]: #parameters-4
+
+[11]: #handleifstatement
+
+[12]: #parameters-5
+
+[13]: #handleblockstatements
+
+[14]: #parameters-6
+
+[15]: #handlefunctiondeclaration
+
+[16]: #parameters-7
+
+[17]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[18]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean

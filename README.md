@@ -1,22 +1,33 @@
-# eslint-plugin-restify-next
+# eslint-plugin-restify-use-next
 
-[![NPM Version](https://img.shields.io/npm/v/eslint-plugin-restify-next.svg)](https://npmjs.org/package/eslint-plugin-restify-next)
-[![Build Status](https://travis-ci.org/rajatkumar/eslint-plugin-restify-next.svg?branch=master)](https://travis-ci.org/rajatkumar/eslint-plugin-restify-next)
-[![Coverage Status](https://coveralls.io/repos/github/rajatkumar/eslint-plugin-restify-next/badge.svg?branch=master)](https://coveralls.io/github/rajatkumar/eslint-plugin-restify-next?branch=master)
-[![Dependency Status](https://david-dm.org/rajatkumar/eslint-plugin-restify-next.svg)](https://david-dm.org/rajatkumar/eslint-plugin-restify-next)
-[![devDependency Status](https://david-dm.org/rajatkumar/eslint-plugin-restify-next/dev-status.svg)](https://david-dm.org/rajatkumar/eslint-plugin-restify-next#info=devDependencies)
+[![NPM Version](https://img.shields.io/npm/v/eslint-plugin-restify-use-next.svg)](https://npmjs.org/package/eslint-plugin-restify-use-next)
+[![Build Status](https://travis-ci.org/rajatkumar/eslint-plugin-restify-use-next.svg?branch=master)](https://travis-ci.org/rajatkumar/eslint-plugin-restify-use-next)
+[![Coverage Status](https://coveralls.io/repos/github/rajatkumar/eslint-plugin-restify-use-next/badge.svg?branch=master)](https://coveralls.io/github/rajatkumar/eslint-plugin-restify-use-next?branch=master)
+[![Dependency Status](https://david-dm.org/rajatkumar/eslint-plugin-restify-use-next.svg)](https://david-dm.org/rajatkumar/eslint-plugin-restify-use-next)
+[![devDependency Status](https://david-dm.org/rajatkumar/eslint-plugin-restify-use-next/dev-status.svg)](https://david-dm.org/rajatkumar/eslint-plugin-restify-use-next#info=devDependencies)
 
-> eslint plugin to check if you call next
+> eslint plugin to check if you call `next()` in your restify handler 🎉
 
-TODO: Some info about the module.
+## 🤷 What
+
+This rule enables you to verify that you are calling `next()` in your restify handlers.
+
+Not calling `next()` has been a common mistake. Restify is different, and you have to call `next()` to your handler chains to work properly.
 
 ## Getting Started
 
-Install the module with: `npm install eslint-plugin-restify-next`
+Install the module with: `npm install eslint-plugin-restify-use-next --save-dev`
 
 ## Usage
 
-TODO: How to use this module, examples.
+Add to your existing eslint config file the following:
+
+```
+    plugins: ['restify-use-next'],
+    rules: {
+        'restify-use-next/restify-use-next': 2
+    }
+```
 
 ## API
 
@@ -34,6 +45,7 @@ make githooks
 ```
 
 Before committing, lint and test your code using the included Makefile:
+
 ```sh
 make prepush
 ```

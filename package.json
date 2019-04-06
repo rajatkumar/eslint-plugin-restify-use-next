@@ -2,7 +2,7 @@
     "name": "eslint-plugin-restify-use-next",
     "version": "0.0.1",
     "main": "lib/index.js",
-    "description": "eslint plugin to check if you call next",
+    "description": "eslint plugin to check if you call `next()` in your restify handler",
     "homepage": "",
     "author": {
         "name": "Rajat Kumar",
@@ -17,7 +17,7 @@
         "lib"
     ],
     "keywords": [
-        "eslint-plugin-restify-next",
+        "eslint-plugin-restify-use-next",
         "eslint",
         " restify",
         " next",
