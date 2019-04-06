@@ -1,0 +1,44 @@
+{
+    "name": "eslint-plugin-restify-use-next",
+    "version": "0.0.1",
+    "main": "lib/index.js",
+    "description": "eslint plugin to check if you call next",
+    "homepage": "",
+    "author": {
+        "name": "Rajat Kumar",
+        "email": "rajatkumartx@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "license": "MIT",
+    "files": [
+        "lib"
+    ],
+    "keywords": [
+        "eslint-plugin-restify-next",
+        "eslint",
+        " restify",
+        " next",
+        " check next"
+    ],
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "conventional-changelog-angular": "^5.0.0",
+        "conventional-recommended-bump": "^4.0.0",
+        "coveralls": "^3.0.1",
+        "documentation": "^8.0.0",
+        "eslint": "^4.19.1",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-prettier": "^2.6.0",
+        "mocha": "^5.2.0",
+        "nyc": "^12.0.2",
+        "prettier": "^1.13.5",
+        "restify": "^8.2.0",
+        "unleash": "^2.0.1"
+    },
+    "dependencies": {
+        "requireindex": "^1.2.0"
+    }
+}

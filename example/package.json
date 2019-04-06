@@ -1,0 +1,22 @@
+{
+    "name": "example",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "lint": "eslint -c ./.eslintrc.js .",
+        "clean": "rm -rf ./node_modules/eslint-plugin-restify-use-next"
+    },
+    "keywords": [],
+    "devDependencies": {
+        "eslint-plugin-restify-use-next": "file:./../lib"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "eslint": "^5.16.0",
+        "restify": "^8.2.0"
+    }
+}
