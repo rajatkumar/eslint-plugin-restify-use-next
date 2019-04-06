@@ -88,12 +88,12 @@ githooks: $(GITHOOKS) ## Symlink githooks
 
 .PHONY: release-dry
 release-dry: $(NODE_MODULES) ## Dry run of `release` target
-	$(UNLEASH) -d --type=$(shell $(CONVENTIONAL_RECOMMENDED_BUMP) -p angular)
+	$(UNLEASH) -d --type=$(shell $(CONVENTIONAL_RECOMMENDED_BUMP) -p angular) --no-publish
 
 
 .PHONY: release
 release: $(NODE_MODULES) ## Versions, tags, and updates changelog based on commit messages
-	$(UNLEASH) --type=$(shell $(CONVENTIONAL_RECOMMENDED_BUMP) -p angular)
+	$(UNLEASH) --type=$(shell $(CONVENTIONAL_RECOMMENDED_BUMP) -p angular) --no-publish
 
 
 .PHONY: lint
