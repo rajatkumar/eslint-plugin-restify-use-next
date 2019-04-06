@@ -14,6 +14,10 @@ This rule enables you to verify that you are calling `next()` in your restify ha
 
 Not calling `next()` has been a common mistake. Restify is different, and you have to call `next()` to your handler chains to work properly.
 
+## Limitations
+
+Works for simple cases. Open to PRs to enhance this plugin.
+
 ## Getting Started
 
 Install the module with: `npm install eslint-plugin-restify-use-next --save-dev`
