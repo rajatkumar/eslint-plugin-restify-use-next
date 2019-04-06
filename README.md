@@ -8,7 +8,7 @@
 
 > eslint plugin to check if you call `next()` in your restify handler 🎉
 
-## 🤷 What
+## What
 
 This rule enables you to verify that you are calling `next()` in your restify handlers.
 
