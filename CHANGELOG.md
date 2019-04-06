@@ -1,3 +1,12 @@
+<a name="0.0.3"></a>
+### 0.0.3 (2019-04-05)
+
+
+#### Bug Fixes
+
+* readme ([8710b8a1](https://github.com/rajatkumar/eslint-plugin-restify-use-next/commit/8710b8a1))
+
+
 <a name="0.0.2"></a>
 ### 0.0.2 (2019-04-05)
 
