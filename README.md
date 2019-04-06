@@ -42,12 +42,6 @@ See [API](/api.md)
 Ensure that all linting and codestyle tasks are passing. Add unit tests for any
 new or changed functionality.
 
-To start contributing, install the git prepush hooks:
-
-```sh
-make githooks
-```
-
 Before committing, lint and test your code using the included Makefile:
 
 ```sh
