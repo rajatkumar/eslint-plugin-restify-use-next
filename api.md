@@ -46,7 +46,7 @@ valid call expression
 
 ### Parameters
 
--   `node` **[Object][17]** 
+-   `node` **[Object][17]** is the AST node
 
 Returns **[boolean][18]** 
 
@@ -58,7 +58,7 @@ valid `next()` expression
 
 ### Parameters
 
--   `node` **[Object][17]** 
+-   `node` **[Object][17]** is the AST node
 
 Returns **[boolean][18]** 
 
@@ -70,8 +70,7 @@ Returns true if we find a valid call expression
 
 ### Parameters
 
--   `node` **[Object][17]** 
--   `name`  
+-   `node` **[Object][17]** is the AST node
 
 Returns **[boolean][18]** 
 
@@ -84,7 +83,7 @@ Returns true if we find a valid call expression
 
 ### Parameters
 
--   `node` **[Object][17]** 
+-   `node` **[Object][17]** is the AST node
 
 Returns **[boolean][18]** 
 
@@ -96,7 +95,7 @@ Returns true if we find a valid call expression
 
 ### Parameters
 
--   `node` **[Object][17]** 
+-   `node` **[Object][17]** is the AST node
 
 Returns **[boolean][18]** 
 
@@ -108,7 +107,7 @@ Returns true if we find a valid call expression
 
 ### Parameters
 
--   `node` **[Object][17]** 
+-   `node` **[Object][17]** is the AST node
 
 Returns **[boolean][18]** 
 
@@ -120,7 +119,7 @@ Reports if we found any `next()` call or not
 
 ### Parameters
 
--   `node` **[Object][17]** 
+-   `node` **[Object][17]** is the AST node
 
 Returns **void** 
 
