@@ -11,10 +11,9 @@ module.exports = {
         es6: true,
         mocha: true
     },
-    plugins: ['prettier', 'restify-use-next'],
+    plugins: ['prettier'],
     rules: {
         'prettier/prettier': 'error',
-        'restify-use-next/restify-use-next': 'error',
 
         // possible errors
         'no-cond-assign': ['error'],

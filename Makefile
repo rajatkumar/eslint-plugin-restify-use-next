@@ -5,6 +5,8 @@ ROOT_SLASH	:= $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 ROOT		:= $(patsubst %/,%,$(ROOT_SLASH))
 LIB		:= $(ROOT)/lib
 TEST		:= $(ROOT)/test
+TEST_INVALID		:= $(ROOT)/test/lib/rules/invalid
+TEST_VALID		:= $(ROOT)/test/lib/rules/valid
 TOOLS		:= $(ROOT)/tools
 GITHOOKS_SRC	:= $(TOOLS)/githooks
 GITHOOKS_DEST	:= $(ROOT)/.git/hooks
@@ -19,6 +21,7 @@ COVERAGE	:= $(ROOT)/.nyc_output
 COVERAGE_RES	:= $(ROOT)/coverage
 YARN_LOCK	:= $(ROOT)/yarn.lock
 PACKAGE_LOCK	:= $(ROOT)/package-lock.json
+EXAMPLE		:= $(ROOT)/example
 
 
 #
@@ -48,6 +51,9 @@ ALL_FILES	:= $(shell find $(ROOT) \
 			-not \( -path $(NODE_MODULES) -prune \) \
 			-not \( -path $(COVERAGE) -prune \) \
 			-not \( -path $(COVERAGE_RES) -prune \) \
+			-not \( -path $(EXAMPLE) -prune \) \
+			-not \( -path $(TEST_VALID) -prune \) \
+			-not \( -path $(TEST_INVALID) -prune \) \
 			-name '*.js' -type f)
 TEST_FILES	:= $(shell find $(TEST) -name '*.test.js' -type f)
 
