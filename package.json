@@ -1,6 +1,6 @@
 {
     "name": "eslint-plugin-restify-use-next",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "main": "lib/index.js",
     "description": "eslint plugin to check if you call `next()` in your restify handler",
     "homepage": "https://github.com/rajatkumar/eslint-plugin-restify-use-next",
