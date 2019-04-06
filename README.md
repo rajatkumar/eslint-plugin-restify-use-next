@@ -12,7 +12,7 @@
 
 This rule enables you to verify that you are calling `next()` in your restify handlers.
 
-Not calling `next()` has been a common mistake. Restify is different, and you have to call `next()` to your handler chains to work properly.
+Not calling `next()` has been a common mistake. [Restify](http://restify.com/) is different, and you have to call `next()` for your handler chains to work properly.
 
 ## Limitations
 
