@@ -1,3 +1,13 @@
+<a name="0.0.4"></a>
+### 0.0.4 (2020-01-23)
+
+
+#### Bug Fixes
+
+* handle fn in return statements(#2) ([5b9be5e3](https://github.com/rajatkumar/eslint-plugin-restify-use-next/commit/5b9be5e3))
+* readme ([38b8d168](https://github.com/rajatkumar/eslint-plugin-restify-use-next/commit/38b8d168))
+
+
 <a name="0.0.3"></a>
 ### 0.0.3 (2019-04-05)
 
