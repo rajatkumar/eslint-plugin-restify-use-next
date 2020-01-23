@@ -42,7 +42,9 @@ ruleTester.run('restify-use-next', rule, {
         testCaseGenerator('valid', 't7.js'),
         testCaseGenerator('valid', 't8.js'),
         testCaseGenerator('valid', 't9.js'),
-        testCaseGenerator('valid', 't10.js')
+        testCaseGenerator('valid', 't10.js'),
+        testCaseGenerator('valid', 't11.js'),
+        testCaseGenerator('valid', 't12.js')
     ],
 
     invalid: [
@@ -55,6 +57,8 @@ ruleTester.run('restify-use-next', rule, {
         testCaseGenerator('invalid', 't7.js'),
         testCaseGenerator('invalid', 't8.js'),
         testCaseGenerator('invalid', 't9.js'),
-        testCaseGenerator('invalid', 't10.js')
+        testCaseGenerator('invalid', 't10.js'),
+        testCaseGenerator('invalid', 't11.js'),
+        testCaseGenerator('invalid', 't12.js')
     ]
 });
