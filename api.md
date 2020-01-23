@@ -18,6 +18,8 @@
     -   [Parameters][14]
 -   [handleFunctionDeclaration][15]
     -   [Parameters][16]
+-   [handleReturnStatement][17]
+    -   [Parameters][18]
 
 ## 
 
@@ -34,9 +36,9 @@ handler function
 
 ### Parameters
 
--   `node` **[Object][17]** is the AST node
+-   `node` **[Object][19]** is the AST node
 
-Returns **[boolean][18]** 
+Returns **[boolean][20]** 
 
 ## handleReturnStmt
 
@@ -46,9 +48,9 @@ valid call expression
 
 ### Parameters
 
--   `node` **[Object][17]** is the AST node
+-   `node` **[Object][19]** is the AST node
 
-Returns **[boolean][18]** 
+Returns **[boolean][20]** 
 
 ## handleNextCallExpression
 
@@ -58,9 +60,9 @@ valid `next()` expression
 
 ### Parameters
 
--   `node` **[Object][17]** is the AST node
+-   `node` **[Object][19]** is the AST node
 
-Returns **[boolean][18]** 
+Returns **[boolean][20]** 
 
 ## handleGenericFnCallExpression
 
@@ -70,9 +72,9 @@ Returns true if we find a valid call expression
 
 ### Parameters
 
--   `node` **[Object][17]** is the AST node
+-   `node` **[Object][19]** is the AST node
 
-Returns **[boolean][18]** 
+Returns **[boolean][20]** 
 
 ## handleFnCallExpression
 
@@ -83,9 +85,9 @@ Returns true if we find a valid call expression
 
 ### Parameters
 
--   `node` **[Object][17]** is the AST node
+-   `node` **[Object][19]** is the AST node
 
-Returns **[boolean][18]** 
+Returns **[boolean][20]** 
 
 ## handleIfStatement
 
@@ -95,9 +97,9 @@ Returns true if we find a valid call expression
 
 ### Parameters
 
--   `node` **[Object][17]** is the AST node
+-   `node` **[Object][19]** is the AST node
 
-Returns **[boolean][18]** 
+Returns **[boolean][20]** 
 
 ## handleBlockStatements
 
@@ -107,9 +109,9 @@ Returns true if we find a valid call expression
 
 ### Parameters
 
--   `node` **[Object][17]** is the AST node
+-   `node` **[Object][19]** is the AST node
 
-Returns **[boolean][18]** 
+Returns **[boolean][20]** 
 
 ## handleFunctionDeclaration
 
@@ -119,7 +121,20 @@ Reports if we found any `next()` call or not
 
 ### Parameters
 
--   `node` **[Object][17]** is the AST node
+-   `node` **[Object][19]** is the AST node
+
+Returns **void** 
+
+## handleReturnStatement
+
+This function checks if the current node is a Return statement
+that returns a restify handler function and then
+looks for any call for next() inside it.
+Reports if we found any `next()` call or not
+
+### Parameters
+
+-   `node` **[Object][19]** is the AST node
 
 Returns **void** 
 
@@ -155,6 +170,10 @@ Returns **void**
 
 [16]: #parameters-7
 
-[17]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[17]: #handlereturnstatement
 
-[18]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[18]: #parameters-8
+
+[19]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[20]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
